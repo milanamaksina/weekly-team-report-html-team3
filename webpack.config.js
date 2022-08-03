@@ -18,7 +18,12 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "index.html",
+      template: "./index.html",
+      filename: "index.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/screens/home.html",
+      filename: "home.html"
     }),
 
     // Add your plugins here
@@ -41,6 +46,16 @@ const config = {
       {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
         type: "asset",
+      },
+      {
+        test: /\.(html)$/,
+        include: path.join(__dirname, "src/views"),
+        use: {
+          loader: "html-loader",
+          options: {
+            interpolate: true,
+          },
+        },
       },
 
       // Add your rules for custom modules here
