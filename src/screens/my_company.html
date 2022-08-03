@@ -1,5 +1,23 @@
 <!DOCTYPE html>
 <html class="h-100">
+    <style>
+        h3{
+            font-weight: bold;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+        }
+       
+        h4, h5{
+            border-bottom: 3px solid rgb(237, 237, 237);
+            font-weight: bold;
+            font-size: xx-small;
+        }
+        p1, p2{
+            font-family:Arial, Helvetica, sans-serif
+        }
+        
+
+
+    </style>
     <head>
         <meta charset="utf-8" />
         <title>My company</title>
@@ -25,7 +43,46 @@
                             </div>
                         </div>
                     </div>
+                    <div class="container">
+                        <div class="row mx-auto my-2 my-sm-3 my-lg-4 p-3">
+                            <div class="col-md-8">
+                                <h3>
+                                    EDIT ANKO TECHNOLOGIES CORP'S INFORMATION
+                                </h3>
+                                <p1>You may edit the company name, as well as deactivate/activate the Weekly Report Tool functionality. 
+                                    If you need to edit a team member's information, you can access that information by seeing the list of team members.
+                                </p1>            
+                            </div>
+                         </div>
+                    </div>
+                    <div class="container">
+                        <div class="row mx-auto my-1 my-sm-3 my-lg-4 p-3">
+                            <h4>RENAME ANKO TECHNOLOGIES CORP</h4>
+                            <form>
+                                <div class="mb-3 col-12 col-md-4">
+                                  <label for="namechanges" style="font-weight: bold;" class="form-label">Change company name</label>
+                                  <input type="name" class="form-control" id="inputName" aria-describedby="nameHelp" size="40px">
+                                </div>
+                                <button type="saveNameChange" style="font-weight: bold;" class="btn btn-outline-dark">Save name change</button>
+                            </form>  
+                        </div>
+                        <div class="row mx-auto my-1 my-sm-3 my-lg-4 p-3">
+                            <div class="col-md-12">
+                                <h5>SEE A LIST OF ANKO TECHNOLOGIES CORP'S TEAM MEMBERS</h5>
+                            </div>  
+                            <div class="col-md-8 mb-3">
+                                <p2>If you need to edit a particular team member, you can see a complite list of team members and visit their profile to
+                                    make edits. You will not be able to see a team member's weekly report.
+                                </p2>
+                            </div>
+                            <form>
+                                <button type="seeAllTeamMembers" style="font-weight: bold;" class="btn btn-outline-dark">See All Team Members</button>
+                            </form>  
+                        </div>      
+                    </div>
                 </div>
+            </div>
+                
             <footer></footer>
         </div>
         </div>
