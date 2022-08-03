@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html class="h-100">
-    <head>
-        <meta charset="utf-8" />
-        <title>Weekly report</title>
-    </head>
-    <body class="h-100">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Weekly report</title>
+</head>
+
+<body class="h-100">
         <%= require("html-loader!./src/components/sidebar.html").default %>
-        <header></header>
-        <main></main>
-        <footer></footer>
-    </body>
-    
+        <%= require("html-loader!./src/components/header.html").default %>
+    <main></main>
+    <footer></footer>
+</body>
+
 </html>
