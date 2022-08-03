@@ -1,0 +1,23 @@
+.nav-pills > .nav-item > .nav-link:active{
+    background-color: #1f2426 !important;
+    color: white !important;
+    font-weight: bold;
+}
+.nav-pills > .nav-item > .nav-link{
+    color: white !important;
+}
+.nav-pills > .nav-item > .nav-link:hover{
+    color: #fcd214 !important;
+}
+.sidebar{
+    max-width: 200px;
+    background: #333a3d;
+    position: fixed;
+}
+.logo {
+    width: 180px;
+}
+.header{
+    height: 150px;
+    background-color: #343434;
+}
