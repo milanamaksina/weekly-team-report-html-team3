@@ -5,9 +5,29 @@
         <title>My company</title>
     </head>
     <body class="h-100">
-        <header>my_company_TEST</header>
-        <main></main>
-        <footer></footer>
+        <div class="container-fluid p-0 h-100">
+            <div class="row h-100 m-0 ">
+                <div class="col col-auto p-0 h-100">
+                    <div class="" style="width: 200px;">
+                        <%= require("html-loader!../components/sidebar.html").default %>
+                    </div>  
+                </div>
+                <div class="col m-0 p-0">
+                    <div class="container-fluid">
+                        <div class="row"> 
+                            <div class="col p-0">
+                                <header class="header">
+                                    <div class="headertext">
+                                        <h1>ANKO technologies Corp</h1>
+                                        <h2>Joined January 2020</h2>
+                                    </div>
+                                </header>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <footer></footer>
+        </div>
+        </div>
     </body>
-    
 </html>

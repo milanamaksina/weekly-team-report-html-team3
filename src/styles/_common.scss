@@ -13,3 +13,24 @@
     bottom: 60% !important;
     z-index: 7;
 }
+<<<<<<< refs/remotes/upstream/main
+=======
+.header{
+    height: 150px;
+    background-color: #343434;
+    
+}
+.headertext>h1{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 30px; 
+    color: #fff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+.headertext>h2{
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
+}
+>>>>>>> feature: add header
