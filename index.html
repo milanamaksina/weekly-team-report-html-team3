@@ -7,10 +7,75 @@
 </head>
 
 <body class="h-100">
-        <%= require("html-loader!./src/components/sidebar.html").default %>
-        <%= require("html-loader!./src/components/header.html").default %>
-    <main></main>
-    <footer></footer>
+    <div class="container-fluid p-0 h-100">
+        <div class="row h-100 m-0 ">
+            <div class="col col-auto p-0 h-100">
+                <div class="" style="width: 200px;">
+                    <%= require("html-loader!./src/components/sidebar.html").default %>
+                </div>  
+            </div>
+            <div class="col m-0 p-0">
+                <div class="container-fluid">
+                    <div class="row"> 
+                        <div class="col p-0">
+                            <header class="header">
+                                
+                            </header>
+                        </div>
+                    </div>
+                    <div class="row invite-form">
+                        <div class="col-md-8 offset-md-2">
+                            <main>
+                                <div class="container mt-5 pt-5">
+                                    <div class="row mb-4">
+                                        <div class="col text-start">
+                                            <h2 class="fw-bold">Invite Your Team</h2>
+                                            <h6>Click on the link below and invite the team members who directly report you.</h6>
+                                            <input type="button" class="btn btn-warning" value="Invite">
+                                        </div>
+                                        <div class="col text-center">
+                                            IMAGE
+                                        </div>
+                                    </div>
+                                    <div class="row mb-4">
+                                        <div class="col text-center">
+                                            IMAGE
+                                        </div>
+                                        <div class="col text-start">
+                                            <h2 class="fw-bold">Encourage Your Team To Accept Your Invitation</h2>
+                                            <h6>When they recieve your invitation, team members will be prompted to complete their profiles. If a team member hasn't created their profile within 24 hours, follow up with them!</h6>
+                                            <input type="button" class="btn btn-warning" value="Invite">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-4">
+                                        <div class="col text-start">
+                                            <h2 class="fw-bold">Remind Your Team</h2>
+                                            <h6>Every Friday, we'll automatically send your team members an email reminding them to fill out their Weekly Report. But we also encourage you to consistently request their Weekly Reports so they realize the importance of this new habit.</h6>
+                                            <input type="button" class="btn btn-warning" value="Invite">
+                                        </div>
+                                        <div class="col text-center">
+                                            IMAGE
+                                        </div>
+                                    </div>
+                                    <div class="row mb-4">
+                                        <div class="col text-center">
+                                            IMAGE
+                                        </div>
+                                        <div class="col text-start">
+                                            <h2 class="fw-bold">Read Their Reports</h2>
+                                            <h6>Set aside some time on Monday to read all the reports. Then reach out to any team members who need to be acknowledged for a success or supported during a difficult time. (And yes, we'll send you a reminder to read your reports each week too.)</h6>
+                                            <input type="button" class="btn btn-warning" value="Invite">
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        <footer></footer>
+    </div>
 </body>
 
 </html>
