@@ -21,16 +21,16 @@
     
 }
 .headertext>h1{
-    font-size: 50px;
+    font-size: 80px;
     text-align: center;
-    padding-top: 30px; 
+    padding-top: 90px; 
     color: #fff;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:francisco-serial;
     font-weight: bold;
 }
 .headertext>h2{
     text-align: center;
-    font-size: 10px;
+    font-size: 20px;
     color: #fff;
 }
 <<<<<<< refs/remotes/upstream/main
@@ -40,4 +40,25 @@
     text-decoration: underline; 
     text-decoration-color: red;
 }
+<<<<<<< refs/remotes/upstream/main
 >>>>>>> feature: add headers and buttons
+=======
+
+.profile-logo{
+    width: 125px;
+}
+.header-text{
+    color: #ffffff;
+    font-family: francisco-serial;
+    font-weight: 900;
+    font-size: 5em;
+}
+.mail-text{
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: 500;
+}
+main{
+    background: #f5f7f8;
+}
+>>>>>>> fix: help button
