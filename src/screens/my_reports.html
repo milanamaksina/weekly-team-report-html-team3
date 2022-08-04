@@ -1,50 +1,81 @@
 <!DOCTYPE html>
 <html class="h-100">
-    <head>
-        <meta charset="utf-8" />
-        <title>My reports</title>
-    </head>
-    <body class="h-100">
-        <%= require("html-loader!../components/sidebar.html").default %>
+
+<head>
+    <meta charset="utf-8" />
+    <title>My reports</title>
+</head>
+
+<body class="h-100">
+    <%= require("html-loader!../components/sidebar.html").default %>
         <%= require("html-loader!../components/header.html").default %>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-2"></div>
-                <main class="h-100 col-md-10">
-                    <div class="container">
-                        <h5 class="text-center p-5">PAST WEEKLY REPORTS</h5>
-                        <button type="button" class="btn btn-dark">Expand All</button>
-                        <table class="table">
-                            <thead>
-                                <tr >
-                                    <th></th>
-                                    <th>Morale</th>
-                                    <th>Stress</th>
-                                    <th>Workload</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>May 3 - May 9, 2020</td>
-                                    <td><img alt="happy_icon" src=<%=require("../img/happy.svg")%>></td>
-                                    <td><img alt="happy_icon" src=<%=require("../img/neutral.svg")%>></td>
-                                    <td><img alt="happy_icon" src=<%=require("../img/sad.svg")%>></td>
-                                    <td>test</td>
-                                </tr>
-                                <tr>
-                                    <td>April 12- April 18, 2020</td>
-                                    <td><img alt="happy_icon" src=<%=require("../img/happy.svg")%>></td>
-                                    <td><img alt="happy_icon" src=<%=require("../img/very-happy.svg")%>></td>
-                                    <td><img alt="happy_icon" src=<%=require("../img/sad.svg")%>></td>
-                                    <td>test</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </main>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <main class="h-100 col-md-10">
+                        <div class="container">
+                            <h5 class="text-center text-bold mt-5">PAST WEEKLY REPORTS</h5>
+                            <div class="text-center ">__</div>
+                            <button type="button" class="btn btn-dark btn-sm mt-5">Expand All</button>
+                            <div class="mt-2 card shadow border-0 container-fluid">
+                                <div class="row card-body">
+                                    <div class="col-md-8"></div>
+                                    <div class="col-md-1">Morale</div>
+                                    <div class="col-md-1">Stress</div>
+                                    <div class="col-md-1">Workload</div>
+                                    <div class="col-md-1"></div>
+                                </div>
+                            </div>
+
+                            <div class="mt-2 card shadow border-0 container-fluid" type="button" data-toggle="collapse" data-target="#first">
+                                <div class="row card-body align-items-center">
+                                    <div class="col-md-8">May 3 - May 9, 2020</div>
+                                    <div class="col-md-1"><img alt="happy_icon" src=<%=require("../img/happy.svg")%>></div>
+                                    <div class="col-md-1"><img alt="happy_icon" src=<%=require("../img/neutral.svg")%>></div>
+                                    <div class="col-md-1"><img alt="happy_icon" src=<%=require("../img/sad.svg")%>></div>
+                                    <div class="col-md-1">Expand &ensp;<i class="bi bi-caret-down-fill"></i></div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="first">
+                                <div>Weekly High <br> <span class="text-sm">Identified our goal and priorities</span> </div>
+                            </div>
+
+                            <div class="mt-2 card shadow border-0 container-fluid">
+                                <div class="row card-body align-items-center">
+                                    <div class="col-md-8">April 12 - April 18, 2020</div>
+                                    <div class="col-md-1"><img alt="happy_icon" src=<%=require("../img/happy.svg")%>></div>
+                                    <div class="col-md-1"><img alt="happy_icon" src=<%=require("../img/very-happy.svg")%>></div>
+                                    <div class="col-md-1"><img alt="happy_icon" src=<%=require("../img/sad.svg")%>></div>
+                                    <div class="col-md-1">Expand &ensp;<i class="bi bi-caret-down-fill"></i></div>
+                                </div>
+                            </div>
+
+                            <div class="mt-2 card shadow border-0 container-fluid">
+                                <div class="row card-body align-items-center">
+                                    <div class="col-md-8">February 9 - February 15, 2020</div>
+                                    <div class="col-md-1"><img alt="happy_icon" src=<%=require("../img/happy.svg")%>></div>
+                                    <div class="col-md-1"><img alt="happy_icon" src=<%=require("../img/happy.svg")%>></div>
+                                    <div class="col-md-1"><img alt="happy_icon" src=<%=require("../img/happy.svg")%>></div>
+                                    <div class="col-md-1">Expand &ensp;<i class="bi bi-caret-down-fill"></i></div>
+                                </div>
+                            </div>
+
+                            <div class="mt-2 card shadow border-0 container-fluid">
+                                <div class="row card-body align-items-center">
+                                    <div class="col-md-8">January 19 - January 25, 2020</div>
+                                    <div class="col-md-1"><img alt="happy_icon" src=<%=require("../img/very-happy.svg")%>></div>
+                                    <div class="col-md-1"><img alt="happy_icon" src=<%=require("../img/very-happy.svg")%>></div>
+                                    <div class="col-md-1"><img alt="happy_icon" src=<%=require("../img/very-happy.svg")%>></div>
+                                    <div class="col-md-1">Expand &ensp;<i class="bi bi-caret-down-fill"></i></div>
+                                </div>
+                            </div>
+                            <br><br><br>
+                            <tbody class="panel panel-default" data-toggle="collapse" type="button"
+                                data-target="#first">
+                        </div>
+                    </main>
+                </div>
             </div>
-        </div>
-    </body>
-    
+</body>
+
 </html>
