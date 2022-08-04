@@ -16,14 +16,30 @@
                     <div class="container-fluid">
                         <div class="row"> 
                             <div class="col p-0">
-                                <header class="header">
-                                    
+                                <header class=" d-flex align-items-center  header">
+                                    <h1 class="fw-bold mx-auto text-white">Invite Your Team</h1>
                                 </header>
                             </div>
                         </div>
                         <div class="row invite-form">
                             <div class="col-md-8 offset-md-2">
+                                <form action="" class="mt-5 border p-4 bg-light shadow">
+                                    <div class="mb-2 align-self-center">
+                                        <p class="fw-bold">Succes! Your team member has been invited to the Weekly Report Tool</p>
+                                        <p>Once they accept your invitation they'll be able to create their reports.</p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row invite-form">
+                            <div class="col-md-8 offset-md-2">
+                                
+                            </div>
+                        </div>
+                        <div class="row invite-form">
+                            <div class="col-md-8 offset-md-2">
                                 <main>
+                                    <%= require("html-loader!../components/button.html").default %>
                                     <form action="" class="mt-5 border p-4 bg-light shadow">
                                         <div class="mb-2 align-self-center">
                                             <p class="fw-bold">Enter the team member you'd like to invite</p>
