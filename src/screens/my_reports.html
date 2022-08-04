@@ -5,9 +5,46 @@
         <title>My reports</title>
     </head>
     <body class="h-100">
-        <header>my_reports_TEST</header>
-        <main></main>
-        <footer></footer>
+        <%= require("html-loader!../components/sidebar.html").default %>
+        <%= require("html-loader!../components/header.html").default %>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <main class="h-100 col-md-10">
+                    <div class="container">
+                        <h5 class="text-center p-5">PAST WEEKLY REPORTS</h5>
+                        <button type="button" class="btn btn-dark">Expand All</button>
+                        <table class="table">
+                            <thead>
+                                <tr >
+                                    <th></th>
+                                    <th>Morale</th>
+                                    <th>Stress</th>
+                                    <th>Workload</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>May 3 - May 9, 2020</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>test</td>
+                                </tr>
+                                <tr>
+                                    <td>April 12- April 18, 2020</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>test</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </main>
+            </div>
+        </div>
     </body>
     
 </html>
