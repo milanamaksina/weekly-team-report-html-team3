@@ -23,136 +23,167 @@
                     <div class="col-md-2"></div>
                     <main class="h-100 col-md-10">
                         <div class="container">
-                            <h5 class="text-center text-bold mt-5">PAST WEEKLY REPORTS</h5>
-                            <div class="text-center">__</div>
+                            <h5 class="text-center text-bold mt-5 fw-bold">PAST WEEKLY REPORTS</h5>
+                            <div class="text-center text-weight-bold fw-bold text-warning">__</div>
                             <div class="d-flex flex-row-reverse">
-                                <button type="button" class="btn btn-dark btn-md mt-5 px-4">Expand All</button>
+                                <button type="button" class="btn btn-dark btn-md mt-5 px-4 fw-bold">Expand All</button>
                             </div>
                             <div class="mt-2 card shadow border-0 container-fluid">
-                                <div class="row card-body">
+                                <div class="row card-body fs-5">
                                     <div class="col-md-8"></div>
                                     <div class="col-md-1">Morale</div>
                                     <div class="col-md-1">Stress</div>
-                                    <div class="col-md-1">Workload</div>
+                                    <div class="col-md-1 px-0">Workload</div>
                                     <div class="col-md-1"></div>
                                 </div>
                             </div>
 
                             <!-- First -->
                             <div class="mt-2 card shadow border-0 container-fluid">
-                                <div class="row card-header border-0 align-items-center">
-                                    <div class="col-md-8">May 3 - May 9, 2020</div>
+                                <div class="row card-header border-0 align-items-center bg-white">
+                                    <div class="col-md-8 fs-5">May 3 - May 9, 2020</div>
                                     <div class="col-md-1"><img alt="happy_icon" src=<%=require("../img/happy.svg")%>>
                                     </div>
                                     <div class="col-md-1"><img alt="happy_icon" src=<%=require("../img/neutral.svg")%>>
                                     </div>
                                     <div class="col-md-1"><img alt="happy_icon" src=<%=require("../img/sad.svg")%>>
                                     </div>
-                                    <button type="button" class="btn border-0 col-md-1" role="button"
-                                        data-toggle="collapse" data-target="#first">Expand &ensp;<i
+                                    <button type="button" class="btn border-0 col-md-1 px-0 fs-5" role="button"
+                                        data-toggle="collapse" data-target="#first">Expand&ensp;<i
                                             class="bi bi-caret-down-fill"></i></button>
                                 </div>
 
-                            <div class="collapse card-body" id="first">
-                                <div class="text-lg">Weekly High <br><span class="text-sm">Identified our goal
-                                        and
-                                        priorities</span></div>
-                                <div class="text-lg">Weekly Low <br><span class="text-sm">Cold weather</span>
+                                <div class="collapse card-body" id="first">
+                                    <div class="px-3">
+                                        <div class="fs-5">Weekly High</div>
+                                        <div class="fs-6">Identified our goal and priorities</div><br>
+                                        <div class="fs-5">Weekly Low </div>
+                                        <div class="fs-6">Cold weather</div><br>
+                                        <div class="fs-5">Anything Else</div>
+                                        <div class="fs-6">Looking forward to launching our first product</div>
+                                    </div><br>
                                 </div>
-                                <div class="text-lg">Anything Else<br><span class="text-sm">Looking forward to
-                                        launching our first product</span></div>
                             </div>
-                            </div>                                
 
                             <!-- Second -->
                             <div class="mt-2 card shadow border-0 container-fluid">
-                                <div class="row card-header border-0 align-items-center">
-                                    <div class="col-md-8">April 12 - April 18, 2020</div>
-                                    <div class="col-md-1"><img alt="happy_icon" src=<%=require("../img/happy.svg")%>>
-                                    </div>
-                                    <div class="col-md-1"><img alt="very_happy_icon"
-                                            src=<%=require("../img/very-happy.svg")%>></div>
-                                    <div class="col-md-1"><img alt="sad_icon" src=<%=require("../img/sad.svg")%>>
-                                    </div>
-                                    <button type="button" class="btn border-0 col-md-1" role="button"
-                                        data-toggle="collapse" data-target="#second">Expand &ensp;<i
-                                            class="bi bi-caret-down-fill"></i></button>
+                                <div class="row card-header border-0 align-items-center bg-dark text-warning py-3">
+                                    <div class="col-md-8 fs-5">April 12 - April 18, 2020</div>
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-1"></div>
+                                    <button type="button" class="btn border-0 col-md-1 text-secondary px-0 fs-5" role="button"
+                                        data-toggle="collapse" data-target="#second">Collapse&nbsp;<i
+                                            class="bi bi-caret-up-fill"></i></button>
                                 </div>
 
-                            <div class="collapse card-body" id="second">
+                                <div class="collapse-in card-body" id="second">
 
-                                    <div class="container">
+                                    <div class="container my-3">
                                         <div class="row mx-2">
                                             <div class="d-flex bg-success rounded-1 shadow col-md-3 p-3">
                                                 <img alt="happy_icon" src=<%=require("../img/happy.svg")%>>
-                                                <div class="mx-5 align-self-center text-light text-uppercase font-weight-bold">Morale</div>
+                                                <div
+                                                    class="mx-5 align-self-center text-light text-uppercase font-weight-bold fw-bold">
+                                                    Morale</div>
                                             </div>
                                             <div class="col-md-9">
-                                                <div>There were no comments added about morale.</div>
+                                                <div class="fst-italic  fs-5 text-secondary">There were no comments added
+                                                    about morale.</div>
                                             </div>
                                         </div>
                                     </div>
-
-                                <div class="card-body text-lg">Weekly High <br><span class="text-sm">Identified our goal
-                                        and
-                                        priorities</span></div>
-                                <div class="card-body text-lg">Weekly Low <br><span class="text-sm">Cold weather</span>
+                                    <div class="container my-5">
+                                        <div class="row mx-2">
+                                            <div class="d-flex bg-success rounded-1 shadow col-md-3 p-3">
+                                                <img alt="happy_icon" src=<%=require("../img/happy.svg")%>>
+                                                <div
+                                                    class="mx-5 align-self-center text-light text-uppercase font-weight-bold fw-bold fs-5">
+                                                    Stress</div>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <div class="fst-italic fs-5 text-secondary">There were no comments added
+                                                    about stress.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container my-5">
+                                        <div class="row mx-2">
+                                            <div class="d-flex bg-success rounded-1 shadow col-md-3 p-3">
+                                                <img alt="happy_icon" src=<%=require("../img/happy.svg")%>>
+                                                <div
+                                                    class="mx-5 align-self-center text-light text-uppercase font-weight-bold fw-bold fs-5">
+                                                    Workload</div>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <div class="fst-italic fs-5 text-secondary">There were no comments added
+                                                    about workload.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="px-3">
+                                        <div class="fs-5">Weekly High</div>
+                                        <div class="fs-6">Identified our goal and priorities</div><br>
+                                        <div class="fs-5">Weekly Low </div>
+                                        <div class="fs-6">Cold weather</div><br>
+                                        <div class="fs-5">Anything Else</div>
+                                        <div class="fs-6">Looking forward to launching our first product</div>
+                                    </div><br>
                                 </div>
-                                <div class="card-body text-lg">Anything Else<br><span class="text-sm">Looking forward to
-                                        launching our first product</span></div>
-                            </div>
                             </div>
 
                             <!-- Third -->
                             <div class="mt-2 card shadow border-0 container-fluid">
-                                <div class="row card-body align-items-center">
-                                    <div class="col-md-8">February 9 - February 15, 2020</div>
+                                <div class="row card-header border-0 align-items-center bg-white">
+                                    <div class="col-md-8 fs-5">February 9 - February 15, 2020</div>
                                     <div class="col-md-1"><img alt="happy_icon" src=<%=require("../img/happy.svg")%>>
                                     </div>
                                     <div class="col-md-1"><img alt="happy_icon" src=<%=require("../img/happy.svg")%>>
                                     </div>
                                     <div class="col-md-1"><img alt="happy_icon" src=<%=require("../img/happy.svg")%>>
                                     </div>
-                                    <button type="button" class="btn border-0 col-md-1" role="button"
-                                        data-toggle="collapse" data-target="#third">Expand &ensp;<i
+                                    <button type="button" class="btn border-0 col-md-1 px-0 fs-5" role="button"
+                                        data-toggle="collapse" data-target="#third">Expand&ensp;<i
                                             class="bi bi-caret-down-fill"></i></button>
                                 </div>
-                            </div>
 
-                            <div class="collapse card shadow border-0 rounded-bottom rounded-sm" id="third">
-                                <div class="card-body text-lg">Weekly High <br><span class="text-sm">Identified our goal
-                                        and
-                                        priorities</span></div>
-                                <div class="card-body text-lg">Weekly Low <br><span class="text-sm">Cold weather</span>
+                                <div class="collapse card-body" id="third">
+                                    <div class="px-3">
+                                        <div class="fs-5">Weekly High</div>
+                                        <div class="fs-6">Identified our goal and priorities</div><br>
+                                        <div class="fs-5">Weekly Low </div>
+                                        <div class="fs-6">Cold weather</div><br>
+                                        <div class="fs-5">Anything Else</div>
+                                        <div class="fs-6">Looking forward to launching our first product</div>
+                                    </div><br>
                                 </div>
-                                <div class="card-body text-lg">Anything Else<br><span class="text-sm">Looking forward to
-                                        launching our first product</span></div>
                             </div>
 
                             <!-- Fourth -->
                             <div class="mt-2 card shadow border-0 container-fluid">
-                                <div class="row card-body align-items-center">
-                                    <div class="col-md-8">January 19 - January 25, 2020</div>
-                                    <div class="col-md-1"><img alt="happy_icon"
-                                            src=<%=require("../img/very-happy.svg")%>></div>
-                                    <div class="col-md-1"><img alt="happy_icon"
-                                            src=<%=require("../img/very-happy.svg")%>></div>
-                                    <div class="col-md-1"><img alt="happy_icon"
-                                            src=<%=require("../img/very-happy.svg")%>></div>
-                                    <button type="button" class="btn border-0 col-md-1" role="button"
-                                        data-toggle="collapse" data-target="#fourth">Expand &ensp;<i
+                                <div class="row card-header border-0 align-items-center bg-white">
+                                    <div class="col-md-8 fs-5">January 19 - January 25, 2020</div>
+                                    <div class="col-md-1"><img alt="happy_icon" src=<%=require("../img/very-happy.svg")%>>
+                                    </div>
+                                    <div class="col-md-1"><img alt="happy_icon" src=<%=require("../img/very-happy.svg")%>>
+                                    </div>
+                                    <div class="col-md-1"><img alt="happy_icon" src=<%=require("../img/very-happy.svg")%>>
+                                    </div>
+                                    <button type="button" class="btn border-0 col-md-1 px-0 fs-5" role="button"
+                                        data-toggle="collapse" data-target="#fourth">Expand&ensp;<i
                                             class="bi bi-caret-down-fill"></i></button>
                                 </div>
-                            </div>
 
-                            <div class="collapse card shadow border-0 rounded-bottom rounded-sm" id="fourth">
-                                <div class="card-body text-lg">Weekly High <br><span class="text-sm">Identified our goal
-                                        and
-                                        priorities</span></div>
-                                <div class="card-body text-lg">Weekly Low <br><span class="text-sm">Cold weather</span>
+                                <div class="collapse card-body" id="fourth">
+                                    <div class="px-3">
+                                        <div class="fs-5">Weekly High</div>
+                                        <div class="fs-6">Identified our goal and priorities</div><br>
+                                        <div class="fs-5">Weekly Low </div>
+                                        <div class="fs-6">Cold weather</div><br>
+                                        <div class="fs-5">Anything Else</div>
+                                        <div class="fs-6">Looking forward to launching our first product</div>
+                                    </div><br>
                                 </div>
-                                <div class="card-body text-lg">Anything Else<br><span class="text-sm">Looking forward to
-                                        launching our first product</span></div>
                             </div>
 
                             <br><br><br>
