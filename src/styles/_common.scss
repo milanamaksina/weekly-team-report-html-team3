@@ -1,21 +1,25 @@
-.nav-pills > .nav-item > .nav-link:active{
-    background-color: #1f2426 !important;
-    color: white !important;
-    font-weight: bold;
-}
-.nav-pills > .nav-item > .nav-link{
-    color: white !important;
-}
-.nav-pills > .nav-item > .nav-link:hover{
-    color: #fcd214 !important;
-}
 .sidebar{
     background: #333a3d;
 }
 .header{
-    height: 350px;
+    height: 180px;
     background-color: #343434;
+    box-shadow: 0 5px 12px -2px gray;
+    font-family: francisco-serial;
 }
+.floating-button{
+    position: fixed !important;
+    
+    right: 0px !important;
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform-origin: bottom right;
+    bottom: 70% !important;
+}
+
 .profile-logo{
     width: 125px;
 }
@@ -29,7 +33,4 @@
     color: #ffffff;
     font-size: 1em;
     font-weight: 500;
-}
-main{
-    background: #f5f7f8;
 }

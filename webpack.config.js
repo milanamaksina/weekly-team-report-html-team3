@@ -61,6 +61,7 @@ const config = {
       template: "./src/screens/edit_member_dialog.html",
       filename: "edit_member_dialog.html"
     }),
+    
   ],
 
   module: {
@@ -78,8 +79,8 @@ const config = {
         use: [stylesHandler, "css-loader", "sass-loader"],
       },
       {
-        test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
-        type: "asset",
+        test: /\.(png|jpg|jpeg|svg|gif)$/,
+        type: 'asset/resource',
       },
       {
         test: /\.(html)$/,
