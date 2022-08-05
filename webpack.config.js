@@ -61,6 +61,7 @@ const config = {
       template: "./src/screens/edit_member_dialog.html",
       filename: "edit_member_dialog.html"
     }),
+    
   ],
 
   module: {

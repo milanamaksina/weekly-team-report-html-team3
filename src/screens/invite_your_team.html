@@ -4,24 +4,26 @@
         <meta charset="utf-8" />
         <title>Weekly report</title>
     </head>
+    
     <body class="h-100">
-        <div class="container-fluid p-0 h-100">
-            <div class="row h-100 m-0 ">
-                <div class="col col-auto p-0 h-100">
-                    <div class="" style="width: 200px;">
-                        <%= require("html-loader!../components/sidebar.html").default %>
-                    </div>  
+        <%= require("html-loader!../components/button.html").default %>
+        <%= require("html-loader!../components/sidebar.html").default %>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-10 p-0">
+                    <div class="col p-0">
+                        <header class=" d-flex align-items-center  header">
+                            <h1 class="fw-bold mx-auto text-white">Invite Your Team</h1>
+                        </header>
+                    </div>
                 </div>
-                <div class="col m-0 p-0">
+                </div>
+                </div>
                     <div class="container-fluid">
-                        <div class="row"> 
-                            <div class="col p-0">
-                                <header class=" d-flex align-items-center  header">
-                                    <h1 class="fw-bold mx-auto text-white">Invite Your Team</h1>
-                                </header>
-                            </div>
-                        </div>
                         <div class="row invite-form">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-10">
                             <div class="col-md-8 offset-md-2">
                                 <form action="" class="mt-5 border p-4 bg-light shadow">
                                     <div class="mb-2 align-self-center">
@@ -30,17 +32,16 @@
                                     </div>
                                 </form>
                             </div>
-                        </div>
-                        <div class="row invite-form">
-                            <div class="col-md-8 offset-md-2">
-                                
-                            </div>
-                        </div>
-                        <div class="row invite-form">
+                            <div class="row ">
+                                <div class="col-md-8 offset-md-2 mt-4">
+                                    <p><i class="bi bi-caret-right-fill"></i>The team member didn't receive your invite?</p>
+                                    </div>
+                                    </div>
+                            <div class="row invite-form">
                             <div class="col-md-8 offset-md-2">
                                 <main>
-                                    <%= require("html-loader!../components/button.html").default %>
-                                    <form action="" class="mt-5 border p-4 bg-light shadow">
+
+                                    <form action="" class="mt-2 border p-4 bg-light shadow">
                                         <div class="mb-2 align-self-center">
                                             <p class="fw-bold">Enter the team member you'd like to invite</p>
                                             <p>Don't worry! You'll be able to add more team members later.</p>
@@ -57,16 +58,16 @@
                                             <label for="exampleFormControlInput1" class="form-label fw-bold">Email</label>
                                             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                                         </div>
-                                        <div class="mb-2 align-self-center"></div>
+                                        <div class="mb-2 align-self-center">
                                             <input type="button" class="btn btn-warning" value="Invite">
+                                        </div>
                                         </div>
                                     </form>
                                 </main>
                             </div>
-                            
+                            </div>
                         </div>
                     </div>
-                </div>
             <footer></footer>
         </div>
         </div>
