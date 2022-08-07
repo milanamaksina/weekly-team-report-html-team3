@@ -44,6 +44,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.2.0",
-    "bootstrap-icons": "^1.9.1"
+    "bootstrap-icons": "^1.9.1",
+    "file-loader": "^6.2.0"
   }
 }

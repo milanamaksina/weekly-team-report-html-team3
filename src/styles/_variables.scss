@@ -4,7 +4,7 @@
 
 
 //navs
-$nav-pills-link-active-bg: #1f2426; 
+$nav-pills-link-active-bg: #1f2426;
 
 $nav-link-color: white;
 
@@ -15,4 +15,15 @@ $nav-pills-link-active-font-weight: bold;
 //body
 $body-bg: #f5f7f8;
 
-//
+//colors
+$theme-colors: (
+    green-light: #91E1A2,
+    primary: $primary,
+    secondary: $secondary,
+    success: $success,
+    info: $info,
+    warning: $warning,
+    danger: $danger,
+    light: $light,
+    dark: $dark
+);
