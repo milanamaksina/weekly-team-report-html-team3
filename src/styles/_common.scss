@@ -1,12 +1,6 @@
 .sidebar{
     background: #333a3d;
 }
-.header{
-    height: 180px;
-    background-color: #343434;
-    box-shadow: 0 5px 12px -2px gray;
-    font-family: francisco-serial;
-}
 .floating-button{
     position: fixed !important;    
     right: 0px !important;
@@ -18,15 +12,8 @@
     transform-origin: bottom right;
     bottom: 70% !important;
 }
-
 .profile-logo{
     width: 125px;
-}
-.header-text{
-    color: #ffffff;
-    font-family: francisco-serial;
-    font-weight: 900;
-    font-size: 5em;
 }
 .mail-text{
     color: #ffffff;
