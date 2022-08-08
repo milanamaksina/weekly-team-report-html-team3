@@ -16,6 +16,7 @@
 </head>
 
 <body class="h-100">
+    <%= require("html-loader!../components/button.html").default %>
     <%= require("html-loader!../components/sidebar.html").default %>
         <%= require("html-loader!../components/header.html").default %>
             <div class="container-fluid">
@@ -42,11 +43,11 @@
                             <div class="mt-2 card shadow border-0 container-fluid">
                                 <div class="row card-header border-0 align-items-center bg-white">
                                     <div class="col-md-8 fs-5">May 3 - May 9, 2020</div>
-                                    <div class="col-md-1"><img class="smiley" alt="happy_icon" src=<%=require("../img/happy.svg")%>>
+                                    <div class="col-md-1"><img class="smiley" alt="happy_icon" src="<%=require("../img/happy.svg")%>">
                                     </div>
-                                    <div class="col-md-1"><img class="smiley" alt="happy_icon" src=<%=require("../img/neutral.svg")%>>
+                                    <div class="col-md-1"><img class="smiley" alt="happy_icon" src="<%=require("../img/neutral.svg")%>">
                                     </div>
-                                    <div class="col-md-1"><img class="smiley" alt="happy_icon" src=<%=require("../img/sad.svg")%>>
+                                    <div class="col-md-1"><img class="smiley" alt="happy_icon" src="<%=require("../img/sad.svg")%>">
                                     </div>
                                     <button type="button" class="btn border-0 col-md-1 px-0 fs-5" role="button"
                                         data-toggle="collapse" data-target="#first">Expand&ensp;<i
@@ -82,7 +83,7 @@
                                     <div class="container my-3">
                                         <div class="row mx-2">
                                             <div class="d-flex bg-green-light rounded-1 shadow col-md-3 p-3">
-                                                <img class="smiley" alt="happy_icon" src=<%=require("../img/happy.svg")%>>
+                                                <img class="smiley" alt="happy_icon" src="<%=require("../img/happy.svg")%>">
                                                 <div
                                                     class="mx-5 align-self-center text-light text-uppercase font-weight-bold fw-bold">
                                                     Morale</div>
@@ -96,7 +97,7 @@
                                     <div class="container my-5">
                                         <div class="row mx-2">
                                             <div class="d-flex bg-green-light rounded-1 shadow col-md-3 p-3">
-                                                <img class="smiley" alt="happy_icon" src=<%=require("../img/happy.svg")%>>
+                                                <img class="smiley" alt="happy_icon" src="<%=require("../img/happy.svg")%>">
                                                 <div
                                                     class="mx-5 align-self-center text-light text-uppercase font-weight-bold fw-bold fs-5">
                                                     Stress</div>
@@ -110,7 +111,7 @@
                                     <div class="container my-5">
                                         <div class="row mx-2">
                                             <div class="d-flex bg-green-light rounded-1 shadow col-md-3 p-3">
-                                                <img class="smiley" alt="happy_icon" src=<%=require("../img/happy.svg")%>>
+                                                <img class="smiley" alt="happy_icon" src="<%=require("../img/happy.svg")%>">
                                                 <div
                                                     class="mx-5 align-self-center text-light text-uppercase font-weight-bold fw-bold fs-5">
                                                     Workload</div>
@@ -136,11 +137,11 @@
                             <div class="mt-2 card shadow border-0 container-fluid">
                                 <div class="row card-header border-0 align-items-center bg-white">
                                     <div class="col-md-8 fs-5">February 9 - February 15, 2020</div>
-                                    <div class="col-md-1"><img alt="happy_icon" class="smiley" src=<%=require("../img/happy.svg")%>>
+                                    <div class="col-md-1"><img alt="happy_icon" class="smiley" src="<%=require("../img/happy.svg")%>">
                                     </div>
-                                    <div class="col-md-1"><img alt="happy_icon" class="smiley" src=<%=require("../img/happy.svg")%>>
+                                    <div class="col-md-1"><img alt="happy_icon" class="smiley" src="<%=require("../img/happy.svg")%>">
                                     </div>
-                                    <div class="col-md-1"><img alt="happy_icon" class="smiley" src=<%=require("../img/happy.svg")%>>
+                                    <div class="col-md-1"><img alt="happy_icon" class="smiley" src="<%=require("../img/happy.svg")%>">
                                     </div>
                                     <button type="button" class="btn border-0 col-md-1 px-0 fs-5" role="button"
                                         data-toggle="collapse" data-target="#third">Expand&ensp;<i
@@ -163,11 +164,11 @@
                             <div class="mt-2 card shadow border-0 container-fluid">
                                 <div class="row card-header border-0 align-items-center bg-white">
                                     <div class="col-md-8 fs-5">January 19 - January 25, 2020</div>
-                                    <div class="col-md-1"><img alt="happy_icon" class="smiley" src=<%=require("../img/very-happy.svg")%>>
+                                    <div class="col-md-1"><img alt="happy_icon" class="smiley" src="<%=require("../img/very-happy.svg")%>">
                                     </div>
-                                    <div class="col-md-1"><img alt="happy_icon" class="smiley" src=<%=require("../img/very-happy.svg")%>>
+                                    <div class="col-md-1"><img alt="happy_icon" class="smiley" src="<%=require("../img/very-happy.svg")%>">
                                     </div>
-                                    <div class="col-md-1"><img alt="happy_icon" class="smiley" src=<%=require("../img/very-happy.svg")%>>
+                                    <div class="col-md-1"><img alt="happy_icon" class="smiley" src="<%=require("../img/very-happy.svg")%>">
                                     </div>
                                     <button type="button" class="btn border-0 col-md-1 px-0 fs-5" role="button"
                                         data-toggle="collapse" data-target="#fourth">Expand&ensp;<i
@@ -185,7 +186,6 @@
                                     </div><br>
                                 </div>
                             </div>
-
                             <br><br><br>
                         </div>
                     </main>
