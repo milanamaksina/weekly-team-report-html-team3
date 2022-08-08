@@ -1,13 +1,173 @@
 <!DOCTYPE html>
 <html class="h-100">
-    <head>
-        <meta charset="utf-8" />
-        <title>Team reports</title>
-    </head>
-    <body class="h-100">
-        <header>team_reports_TEST</header>
-        <main></main>
-        <footer></footer>
-    </body>
-    
+
+<head>
+    <meta charset="utf-8" />
+    <title>Team reports</title>
+</head>
+
+<body class="h-100">
+    <%= require("html-loader!../components/button.html").default %>
+    <%= require("html-loader!../components/sidebar.html").default %>
+        <%= require("html-loader!../components/header.html").default %>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <main class="h-100 col-md-10">
+                        <div class="container">
+                            <h5 class="text-center text-bold mt-5 fw-bold">IMMEDIATE TEAM</h5>
+                            <i class="bi bi-dash-lg fs-1 d-flex justify-content-center text-warning"></i>
+                            <div class="d-flex flex-row-reverse">
+                                <button type="button" class="btn btn-dark btn-md mt-5 px-4 fw-bold">Expand All</button>
+                            </div>
+                            <div class="mt-2 card shadow border-0 container-fluid">
+                                <div class="row card-body fs-5">
+                                    <div class="col-md-8"></div>
+                                    <div class="col-md-1">Morale</div>
+                                    <div class="col-md-1">Stress</div>
+                                    <div class="col-md-1 px-0">Workload</div>
+                                    <div class="col-md-1"></div>
+                                </div>
+                            </div>
+
+                            <!-- First -->
+                            <div class="container-fluid mt-2 card shadow border-0">
+                                <div class="row card-header border-0 bg-white align-items-center">
+                                    <div class="col-md-1">
+                                        <div
+                                            class="d-flex justify-content-center align-items-center rounded-circle bg-white icons-bg">
+                                            <div class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
+                                                <div class="text-gray-dark fw-bold fs-4">AK</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7 align-items-center">
+                                        <div class="fs-5 text-dark ">Alexandr Evseev</div>
+                                        <div class="fs-5 text-secondary">is missing a report</div>
+                                    </div>
+                                    <div class="col-md-4"></div>
+                                </div>
+                            </div>
+
+                            <!-- Second -->
+                            <div class="container-fluid mt-2 card shadow border-0">
+                                <div class="row card-header border-0 bg-white align-items-center">
+                                    <div class="col-md-1">
+                                        <div
+                                            class="d-flex justify-content-center align-items-center rounded-circle bg-white icons-bg">
+                                            <div class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
+                                                <div class="text-gray-dark fw-bold fs-4">NK</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7 align-items-center">
+                                        <div class="fs-5 text-dark ">Nikolai Kapustin</div>
+                                        <div class="fs-5 text-secondary">is missing a report</div>
+                                    </div>
+                                    <div class="col-md-4"></div>
+                                </div>
+                            </div>
+
+                            <!-- Third -->
+                            <div class="container-fluid mt-2 card shadow border-0">
+                                <div class="row card-header border-0 bg-white align-items-center">
+                                    <div class="col-md-1">
+                                        <div
+                                            class="d-flex justify-content-center align-items-center rounded-circle bg-white icons-bg">
+                                            <div class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
+                                                <div class="text-gray-dark fw-bold fs-4">AK</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7 align-items-center">
+                                        <div class="fs-5 text-dark ">Anna Kotova</div>
+                                        <div class="fs-5 text-secondary">is missing a report</div>
+                                    </div>
+                                    <div class="col-md-4"></div>
+                                </div>
+                            </div>
+
+                            <!-- Fourth -->
+                            <div class="container-fluid mt-2 card shadow border-0">
+                                <div class="row card-header border-0 bg-white align-items-center">
+                                    <div class="col-md-1">
+                                        <div
+                                            class="d-flex justify-content-center align-items-center rounded-circle bg-white icons-bg">
+                                            <div class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
+                                                <div class="text-gray-dark fw-bold fs-4">NM</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7 align-items-center">
+                                        <div class="fs-5 text-dark ">Nina Mammadova</div>
+                                        <div class="fs-5 text-secondary">is missing a report</div>
+                                    </div>
+                                    <div class="col-md-4"></div>
+                                </div>
+                            </div>
+
+                            <!-- Fifth -->
+                            <div class="container-fluid mt-2 card shadow border-0">
+                                <div class="row card-header border-0 bg-white align-items-center">
+                                    <div class="col-md-1">
+                                        <div
+                                            class="d-flex justify-content-center align-items-center rounded-circle bg-white icons-bg">
+                                            <div class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
+                                                <div class="text-gray-dark fw-bold fs-4">NS</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7 align-items-center">
+                                        <div class="fs-5 text-dark ">Natalia Starkova</div>
+                                        <div class="fs-5 text-secondary">is missing a report</div>
+                                    </div>
+                                    <div class="col-md-4"></div>
+                                </div>
+                            </div>
+
+                            <!-- Sixth -->
+                            <div class="container-fluid mt-2 card shadow border-0">
+                                <div class="row card-header border-0 bg-white align-items-center">
+                                    <div class="col-md-1">
+                                        <div
+                                            class="d-flex justify-content-center align-items-center rounded-circle bg-white icons-bg">
+                                            <div class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
+                                                <div class="text-gray-dark fw-bold fs-4">AT</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7 align-items-center">
+                                        <div class="fs-5 text-dark ">Anton Tarkhanov</div>
+                                        <div class="fs-5 text-secondary">is missing a report</div>
+                                    </div>
+                                    <div class="col-md-4"></div>
+                                </div>
+                            </div>
+
+                            <!-- Seventh -->
+                            <div class="container-fluid mt-2 card shadow border-0">
+                                <div class="row card-header border-0 bg-white align-items-center">
+                                    <div class="col-md-1">
+                                        <div
+                                            class="d-flex justify-content-center align-items-center rounded-circle bg-white icons-bg">
+                                            <div class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
+                                                <div class="text-gray-dark fw-bold fs-4">AV</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7 align-items-center">
+                                        <div class="fs-5 text-dark ">Alexandr Vovchuk</div>
+                                        <div class="fs-5 text-secondary">is missing a report</div>
+                                    </div>
+                                    <div class="col-md-4"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </main>
+                </div>
+            </div>
+            <br><br><br>
+</body>
+
 </html>
