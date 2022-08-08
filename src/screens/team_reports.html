@@ -7,14 +7,83 @@
 </head>
 
 <body class="h-100">
-    <%= require("html-loader!../components/button.html").default %>
     <%= require("html-loader!../components/sidebar.html").default %>
-        <%= require("html-loader!../components/header.html").default %>
+        <!-- header -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <header class="col-md-10 header-team-reports">
+                    <div class="d-flex justify-content-center mt-4">
+                        <button class="btn btn-dark rounded-0 border border-warning">Immediate Team</button>
+                        <button class="btn btn-dark rounded-0 text-secondary">Extended Team</button>
+                    </div>
+                    <!-- 1 -->
+                    <div class="d-flex flex-row justify-content-center">
+                        <div class="d-flex justify-content-center text-white mt-5">
+                            <div
+                                class="d-flex justify-content-center align-items-center rounded-circle bg-white icons-bg">
+                                <div
+                                    class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
+                                    <div class="text-gray-dark fw-bold fs-4">AK</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="d-flex justify-content-center text-white mt-5">
+                            <div
+                                class="d-flex justify-content-center align-items-center rounded-circle bg-white icons-bg">
+                                <div
+                                    class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
+                                    <div class="text-gray-dark fw-bold fs-4">NK</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="d-flex justify-content-center text-white mt-5">
+                            <div
+                                class="d-flex justify-content-center align-items-center rounded-circle bg-white icons-bg">
+                                <div
+                                    class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
+                                    <div class="text-gray-dark fw-bold fs-4">AK</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="d-flex justify-content-center text-white mt-5">
+                            <div
+                                class="d-flex justify-content-center align-items-center rounded-circle bg-white icons-bg">
+                                <div
+                                    class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
+                                    <div class="text-gray-dark fw-bold fs-4">NM</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- last -->
+                        <div class="d-flex justify-content-center text-white mt-5">
+                            <div
+                                class="d-flex justify-content-center align-items-center rounded-circle bg-white icons-bg">
+                                <div
+                                    class="d-flex justify-content-center align-items-center rounded-circle bg-warning icons">
+                                    <div class="text-gray-dark fw-bold fs-4">+3</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center text-white fs-3 mt-5">Your team&nbsp;<b>has not submitted reports</b>&nbsp;this week.</div>
+                </header>
+            </div>
+        </div>
+        <%= require("html-loader!../components/button.html").default %>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-2"></div>
                     <main class="h-100 col-md-10">
                         <div class="container">
+                            <div class="d-flex justify-content-center mt-4">
+                                <button class="btn btn-dark rounded-0 border border-warning">Previous Period : 5/23 - 5/29</button>
+                                <button class="btn btn-dark rounded-0 text-secondary">Current Period : 5/23 - 5/29</button>
+                                <button class="btn btn-dark rounded-0 text-secondary">Older Reports</button>
+                            </div>
                             <h5 class="text-center text-bold mt-5 fw-bold">IMMEDIATE TEAM</h5>
                             <i class="bi bi-dash-lg fs-1 d-flex justify-content-center text-warning"></i>
                             <div class="d-flex flex-row-reverse">
@@ -36,7 +105,8 @@
                                     <div class="col-md-1">
                                         <div
                                             class="d-flex justify-content-center align-items-center rounded-circle bg-white icons-bg">
-                                            <div class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
+                                            <div
+                                                class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
                                                 <div class="text-gray-dark fw-bold fs-4">AK</div>
                                             </div>
                                         </div>
@@ -55,7 +125,8 @@
                                     <div class="col-md-1">
                                         <div
                                             class="d-flex justify-content-center align-items-center rounded-circle bg-white icons-bg">
-                                            <div class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
+                                            <div
+                                                class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
                                                 <div class="text-gray-dark fw-bold fs-4">NK</div>
                                             </div>
                                         </div>
@@ -74,7 +145,8 @@
                                     <div class="col-md-1">
                                         <div
                                             class="d-flex justify-content-center align-items-center rounded-circle bg-white icons-bg">
-                                            <div class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
+                                            <div
+                                                class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
                                                 <div class="text-gray-dark fw-bold fs-4">AK</div>
                                             </div>
                                         </div>
@@ -93,7 +165,8 @@
                                     <div class="col-md-1">
                                         <div
                                             class="d-flex justify-content-center align-items-center rounded-circle bg-white icons-bg">
-                                            <div class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
+                                            <div
+                                                class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
                                                 <div class="text-gray-dark fw-bold fs-4">NM</div>
                                             </div>
                                         </div>
@@ -112,7 +185,8 @@
                                     <div class="col-md-1">
                                         <div
                                             class="d-flex justify-content-center align-items-center rounded-circle bg-white icons-bg">
-                                            <div class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
+                                            <div
+                                                class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
                                                 <div class="text-gray-dark fw-bold fs-4">NS</div>
                                             </div>
                                         </div>
@@ -131,7 +205,8 @@
                                     <div class="col-md-1">
                                         <div
                                             class="d-flex justify-content-center align-items-center rounded-circle bg-white icons-bg">
-                                            <div class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
+                                            <div
+                                                class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
                                                 <div class="text-gray-dark fw-bold fs-4">AT</div>
                                             </div>
                                         </div>
@@ -150,7 +225,8 @@
                                     <div class="col-md-1">
                                         <div
                                             class="d-flex justify-content-center align-items-center rounded-circle bg-white icons-bg">
-                                            <div class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
+                                            <div
+                                                class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
                                                 <div class="text-gray-dark fw-bold fs-4">AV</div>
                                             </div>
                                         </div>
