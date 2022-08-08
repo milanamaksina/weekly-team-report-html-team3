@@ -7,7 +7,11 @@
 .header-my-reports{
     height: 350px;
     box-shadow: 0 5px 12px -2px gray;
-    font-family: francisco-serial;
+    background-image: url("../img/header_bg.png");
+}
+.header-team-reports {
+    height: 300px;
+    box-shadow: 0 5px 12px -2px gray;
     background-image: url("../img/header_bg.png");
 }
 .header-text{
