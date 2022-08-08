@@ -5,12 +5,74 @@
     <meta charset="utf-8" />
     <title>Weekly report</title>
 </head>
-
-<body class="h-100">
+<body class="h-100 ">
+    <%= require("html-loader!./src/components/button.html").default %>
     <%= require("html-loader!./src/components/sidebar.html").default %>
-    <%= require("html-loader!./src/components/header.html").default %>
-    <main></main>
-    <footer></footer>
+    <div class="container-fluid">
+        <div class="row"> 
+            <div class="col-md-2"></div>
+                <div class="col-md-10  p-0">
+                    <header class="d-flex align-items-center flex-column header">
+                        <img src="<%=require('./src/img/header_logo.png')%>" class="mt-4" style="width: 170px;">
+                        <h3 class="text-white mt-1">Launch Guide</h3>
+                    </header>
+                </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row"> 
+            <div class="col-md-2"></div>
+                <div class="col-md-10 p-0">
+                    <div class="col-md-8 offset-md-2">
+                        <main>
+                            
+                            <div class="container mt-5 pt-5">
+                                <div class="row mb-5">
+                                    <div class="col my-auto text-start">
+                                        <h2 class="fw-bold">Invite Your Team</h2>
+                                        <h5>Click on the link below and invite the team members who directly report you.</h5>
+                                        <input type="button" class="btn btn-warning fw-bold mt-2" value="Invite Your Team">
+                                    </div>
+                                    <div class="col text-center">
+                                        <img src="<%=require('./src/img/image1.png')%>" class=" p-2">
+                                    </div>
+                                </div>
+                                <div class="row mb-5 mt-3">
+                                    <div class="col text-center">
+                                        <img src="<%=require('./src/img/image2.png')%>" class=" p-2">
+                                    </div>
+                                    <div class="col my-auto text-start">
+                                        <h2 class="fw-bold">Encourage Your Team To Accept Your Invitation</h2>
+                                        <h5>When they recieve your invitation, team members will be prompted to complete their profiles. If a team member hasn't created their profile within 24 hours, follow up with them!</h5>
+                                        
+                                    </div>
+                                </div>
+                                <div class="row mb-5 mt-3">
+                                    <div class="col my-auto text-start">
+                                        <h2 class="fw-bold">Remind Your Team</h2>
+                                        <h5>Every Friday, we'll automatically send your team members an email reminding them to fill out their Weekly Report. But we also encourage you to consistently request their Weekly Reports so they realize the importance of this new habit.</h5>
+                                        
+                                    </div>
+                                    <div class="col text-center">
+                                        <img src="<%=require('./src/img/image3.png')%>" class=" p-2">
+                                    </div>
+                                </div>
+                                <div class="row mb-5 mt-3">
+                                    <div class="col text-center">
+                                        <img src="<%=require('./src/img/image4.png')%>" class=" p-2">
+                                    </div>
+                                    <div class="col my-auto text-start">
+                                        <h2 class="fw-bold">Read Their Reports</h2>
+                                        <h5>Set aside some time on Monday to read all the reports. Then reach out to any team members who need to be acknowledged for a success or supported during a difficult time. (And yes, we'll send you a reminder to read your reports each week too.)</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

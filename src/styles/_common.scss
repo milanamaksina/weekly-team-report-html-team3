@@ -1,19 +1,21 @@
-.nav-pills > .nav-item > .nav-link:active{
-    background-color: #1f2426 !important;
-    color: white !important;
-    font-weight: bold;
-}
-.nav-pills > .nav-item > .nav-link{
-    color: white !important;
-}
-.nav-pills > .nav-item > .nav-link:hover{
-    color: #fcd214 !important;
-}
 .sidebar{
     background: #333a3d;
 }
+.floating-button{
+    position: fixed !important;    
+    right: 0px !important;
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform-origin: bottom right;
+    bottom: 60% !important;
+    z-index: 7;
+}
+
 .header{
-    height: 350px;
+    height: 150px;
     background-color: #343434;
     
 }
@@ -52,3 +54,4 @@
 main{
     background: #f5f7f8;
 }
+
