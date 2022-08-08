@@ -17,7 +17,6 @@ $body-bg: #f5f7f8;
 
 //colors
 $theme-colors: (
-    green-light: #91E1A2,
     primary: $primary,
     secondary: $secondary,
     success: $success,
@@ -25,5 +24,8 @@ $theme-colors: (
     warning: $warning,
     danger: $danger,
     light: $light,
-    dark: $dark
+    dark: $dark,
+    green-light: #91E1A2,
+    gray-light: $gray-400,
+    gray-dark: $gray-700,
 );
