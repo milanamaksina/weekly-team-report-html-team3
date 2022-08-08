@@ -2,12 +2,99 @@
 <html class="h-100">
     <head>
         <meta charset="utf-8" />
-        <title>Edit member information</title>
+        <title>My company</title>
     </head>
-    <body class="h-100">
-        <header>edit_member_information_TEST</header>
-        <main></main>
-        <footer></footer>
-    </body>
-    
+        <body class="h-100">
+            <div class="container-fluid p-0 h-100">
+                <div class="row h-100 m-0 ">
+                    <div class="col col-auto p-0 h-100">
+                        <div class="" style="width: 200px;">
+                            <%= require("html-loader!../components/sidebar.html").default %>
+                        </div>  
+                    </div>
+
+                    <div class="col m-0 p-0">
+                        <div class="container-fluid">
+                            <div class="row"> 
+                                <div class="col p-0">
+                                    <header class="header">
+                                        <div class="headertext">
+                                            <h1>ANKO technologies Corp</h1>
+                                            <h2>Joined January 2020</h2>
+                                        </div>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="my-lg-4 mb-12">
+                                <h1>Edit Anatoliy's Information</h1>
+                                <h6>You may assign leaders or team members to this person, as well as deactivate their account if they no longer work for your organization.</h6>
+                            </div>
+                            <div>
+                                <h4>BASIC PROFILE INFORMATION</h4>
+                                <form class="border-top mb-5">
+                                    <div class="mb-3">
+                                        <h5>First name</h5>
+                                        <input style="width: 20%; height: 20%" placeholder="Anatoliy"/>
+                                    </div>
+                                    <div class="mb-3">
+                                        <h5>Last name</h5>
+                                        <input style="width: 20%; height: 20%" placeholder="Kolodkin"/>
+                                    </div>
+                                    <div class="mb-3">
+                                        <h5>Title</h5>
+                                        <input style="width: 20%; height: 20%" placeholder="CEO"/>
+                                    </div>
+                                    <input type="submit" value="Save" class="btn btn-warning" />
+                                </form>
+                                <div>
+                                    <h4>ANATOLIY REPORTS TO THE FOLLOWING LEADER:</h4>
+                                    <div class="mb-5 border-top pt-4">
+                                        <div class="d-grid gap-2 d-md-block mb-3">
+                                            <button class="btn btn-dark" type="button">Nikolay Kapustin</button>
+                                            <button class="btn btn-dark" type="button">Nina Mammadova</button>
+                                            <button class="btn btn-dark" type="button">Natalia Starkova</button>
+                                            <button class="btn btn-dark" type="button">Anton Tarkhanov</button>
+                                            <button class="btn btn-dark" type="button">Alexandr Vovchuk</button>
+                                        </div>
+                                        <button type="button" class="btn btn-outline-secondary" data-toggle="modal">Edit Leader(s)</button>
+                                    </div>
+                                </div>
+                        
+                                <div>
+                                    <h4>THE FOLLOWING TEAM MEMBERS REPORT TO</h4>
+                                    <div class="mb-5 border-top pt-4">
+                                        <div class="d-grid gap-2 d-md-block mb-3 col-md-8">
+                                            <button class="btn btn-dark" type="button">Aleksandr Evseev</button>
+                                            <button class="btn btn-dark" type="button">Nikolay Kapustin</button>
+                                            <button class="btn btn-dark" type="button">Anna Kotova</button>
+                                            <button class="btn btn-dark" type="button">Nina Mammadova</button>
+                                            <button class="btn btn-dark" type="button">Natalia Starkova</button>
+                                            <div class="my-lg-4">
+                                                <button class="btn btn-dark" type="button">Anton Tarkhanov</button>
+                                                <button class="btn btn-dark" type="button">Alexandr Vovchuk</button>
+                                            </div>
+                                            <button type="button" class="btn btn-outline-secondary">Edit Member(s)</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div>
+                                <div class="text-center">
+                                    <textarea rows="2" cols="50" disabled></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <br />
+                                    <button type="button" class="btn btn-warning ml-3 align-items-center">Copy link</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+        </body>
 </html>
