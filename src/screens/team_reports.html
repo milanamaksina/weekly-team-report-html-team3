@@ -13,57 +13,50 @@
             <div class="row">
                 <div class="col-md-2"></div>
                 <header class="col-md-10 header-team-reports">
-                    <div class="d-flex justify-content-center mt-4">
-                        <button class="btn btn-dark rounded-0 border border-warning">Immediate Team</button>
-                        <button class="btn btn-dark rounded-0 text-secondary">Extended Team</button>
-                    </div>
-                    <!-- 1 -->
-                    <div class="d-flex flex-row justify-content-center">
-                        <div class="d-flex justify-content-center text-white mt-5">
-                            <div
-                                class="d-flex justify-content-center align-items-center rounded-circle bg-white icons-bg">
-                                <div
-                                    class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
-                                    <div class="text-gray-dark fw-bold fs-4">AK</div>
+                    <div class="d-flex justify-content-center mt-4" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" onclick="location.href='./team_reports.html'" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                        <label class="btn btn-dark rounded-0 border border-warning" for="btnradio1">Immediate Team</label>
+                      
+                        <input type="radio" onclick="location.href='./weekly_report_history.html'" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                        <label class="btn btn-dark rounded-0 text-secondary" for="btnradio2">Extended Team</label>
+                     </div>
+                    <!-- user-icon-1 -->
+                    <div class="d-flex flex-row justify-content-center gx-0">
+                        <div class="z-4 d-flex justify-content-center text-white mt-5">
+                            <div class="d-flex justify-content-center align-items-center rounded-circle bg-white icons-bg user-icon-1">
+                                <div class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
+                                    <div class="text-gray-dark fw-bold fs-4">AE</div>
                                 </div>
                             </div>
                         </div>
-                        <!-- 2 -->
-                        <div class="d-flex justify-content-center text-white mt-5">
-                            <div
-                                class="d-flex justify-content-center align-items-center rounded-circle bg-white icons-bg">
-                                <div
-                                    class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
+                        <!-- user-icon-2 -->
+                        <div class="z-3 d-flex justify-content-center text-white mt-5">
+                            <div class="d-flex justify-content-center align-items-center rounded-circle bg-white icons-bg user-icon-2">
+                                <div class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
                                     <div class="text-gray-dark fw-bold fs-4">NK</div>
                                 </div>
                             </div>
                         </div>
-                        <!-- 3 -->
-                        <div class="d-flex justify-content-center text-white mt-5">
-                            <div
-                                class="d-flex justify-content-center align-items-center rounded-circle bg-white icons-bg">
-                                <div
-                                    class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
+                        <!-- user-icon-3 -->
+                        <div class="z-2 d-flex justify-content-center text-white mt-5">
+                            <div class="d-flex justify-content-center align-items-center rounded-circle bg-white icons-bg user-icon-3">
+                                <div class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
                                     <div class="text-gray-dark fw-bold fs-4">AK</div>
                                 </div>
                             </div>
                         </div>
-                        <!-- 4 -->
-                        <div class="d-flex justify-content-center text-white mt-5">
-                            <div
-                                class="d-flex justify-content-center align-items-center rounded-circle bg-white icons-bg">
-                                <div
-                                    class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
+                        <!-- user-icon-4 -->
+                        <div class="z-1 d-flex justify-content-center text-white mt-5">
+                            <div class="d-flex justify-content-center align-items-center rounded-circle bg-white icons-bg user-icon-4">
+                                <div class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
                                     <div class="text-gray-dark fw-bold fs-4">NM</div>
                                 </div>
                             </div>
                         </div>
-                        <!-- last -->
-                        <div class="d-flex justify-content-center text-white mt-5">
-                            <div
-                                class="d-flex justify-content-center align-items-center rounded-circle bg-white icons-bg">
-                                <div
-                                    class="d-flex justify-content-center align-items-center rounded-circle bg-warning icons">
+                        <!-- general-icon -->
+                        <div class="z-5 d-flex justify-content-center text-white mt-5">
+                            <div class="d-flex justify-content-center align-items-center rounded-circle bg-white icons-bg general-icon">
+                                <div class="d-flex justify-content-center align-items-center rounded-circle bg-warning icons">
                                     <div class="text-gray-dark fw-bold fs-4">+3</div>
                                 </div>
                             </div>
@@ -73,16 +66,22 @@
                 </header>
             </div>
         </div>
+        <%= require("html-loader!../components/help.html").default %>
         <%= require("html-loader!../components/button.html").default %>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-2"></div>
                     <main class="h-100 col-md-10">
                         <div class="container">
-                            <div class="d-flex justify-content-center mt-4">
-                                <button class="btn btn-dark rounded-0 border border-warning">Previous Period : 5/23 - 5/29</button>
-                                <button class="btn btn-dark rounded-0 text-secondary">Current Period : 5/23 - 5/29</button>
-                                <button class="btn btn-dark rounded-0 text-secondary">Older Reports</button>
+                            <div class="d-flex justify-content-center mt-4" role="group" aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" checked>
+                                <label class="btn btn-dark rounded-0 border border-warning" for="btnradio3">Previous Period : 5/23 - 5/29</label>
+                              
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                                <label class="btn btn-dark rounded-0 text-secondary" for="btnradio4">Current Period : 5/23 - 5/29</label>
+                                
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+                                <label class="btn btn-dark rounded-0 text-secondary" for="btnradio5">Older Reports</label>
                             </div>
                             <h5 class="text-center text-bold mt-5 fw-bold">IMMEDIATE TEAM</h5>
                             <i class="bi bi-dash-lg fs-1 d-flex justify-content-center text-warning"></i>
@@ -107,7 +106,7 @@
                                             class="d-flex justify-content-center align-items-center rounded-circle bg-white icons-bg">
                                             <div
                                                 class="d-flex justify-content-center align-items-center rounded-circle bg-gray-light icons">
-                                                <div class="text-gray-dark fw-bold fs-4">AK</div>
+                                                <div class="text-gray-dark fw-bold fs-4">AE</div>
                                             </div>
                                         </div>
                                     </div>

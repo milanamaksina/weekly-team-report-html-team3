@@ -5,9 +5,298 @@
         <title>Weekly report history</title>
     </head>
     <body class="h-100">
-        <header>weekly_report_history_TEST</header>
-        <main></main>
-        <footer></footer>
+        <%= require("html-loader!../components/sidebar.html").default %>
+        <!-- header -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <header class="col-md-10 header-team-reports">
+                    <div class="d-flex justify-content-center mt-4" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" onclick="location.href='./team_reports.html'" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+                        <label class="btn btn-dark rounded-0 text-secondary" for="btnradio1">Immediate Team</label>
+                      
+                        <input type="radio" onclick="location.href='./weekly_report_history.html'" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" checked>
+                        <label class="btn btn-dark rounded-0 border border-warning" for="btnradio2">Extended Team</label>
+                     </div>
+                    <!-- Title -->
+                    <div class="d-flex justify-content-center text-white fs-1 fw-bold mt-5">
+                        Weekly Report History
+                    </div>
+                    <div class="d-flex justify-content-center text-white fs-4 mt-5">Get a bigger picture of how your team has been doing over time.</div>
+                </header>
+            </div>
+        </div>
+        <%= require("html-loader!../components/help.html").default %>
+        <%= require("html-loader!../components/button.html").default %>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <main class="h-100 col-md-10">
+                        <div class="container">
+                            <div class="d-flex justify-content-center mt-4" role="group" aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                                <label class="btn btn-dark rounded-0 text-secondary" for="btnradio3">Previous Period : 5/23 - 5/29</label>
+                              
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                                <label class="btn btn-dark rounded-0 text-secondary" for="btnradio4">Current Period : 5/23 - 5/29</label>
+                                
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off" checked>
+                                <label class="btn btn-dark rounded-0 border border-warning" for="btnradio5">Older Reports</label>
+                            </div>
+                            <div class="d-flex justify-content-center mt-3" role="group" aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off" checked>
+                                <label class="btn btn-dark rounded-0 border border-warning" for="btnradio6">Overall</label>
+                              
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off">
+                                <label class="btn btn-dark rounded-0 text-secondary" for="btnradio7">Morale</label>
+                                
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio8" autocomplete="off">
+                                <label class="btn btn-dark rounded-0 text-secondary" for="btnradio8">Stress</label>
+                                
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio9" autocomplete="off">
+                                <label class="btn btn-dark rounded-0 text-secondary" for="btnradio9">Workload</label>
+                            </div>
+                            <h5 class="text-center text-bold mt-5 fw-bold">EXTENDED TEAM AVERAGE</h5>
+                            <i class="bi bi-dash-lg fs-1 d-flex justify-content-center text-warning"></i>
+                            
+                            <div class="mt-3 container-fluid">
+                                <div class="row fs-6">
+                                    <div class="col-md-4"></div>
+                                    <div class="col-md-8">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-2"></div>
+                                                <div class="col-md-1 p-0 d-flex justify-content-center">9w ago</div>
+                                                <div class="col-md-1 p-0 d-flex justify-content-center">8w ago</div>
+                                                <div class="col-md-1 p-0 d-flex justify-content-center">7w ago</div>
+                                                <div class="col-md-1 p-0 d-flex justify-content-center">6w ago</div>
+                                                <div class="col-md-1 p-0 d-flex justify-content-center">5w ago</div>
+                                                <div class="col-md-1 p-0 d-flex justify-content-center">4w ago</div>
+                                                <div class="col-md-1 p-0 d-flex justify-content-center">3w ago</div>
+                                                <div class="col-md-1 p-0 d-flex justify-content-center">2w ago</div>
+                                                <div class="col-md-1 p-0 d-flex justify-content-center">1w ago</div>
+                                                <div class="col-md-1 p-0 d-flex justify-content-center">Current</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2 card shadow border-0 container-fluid">
+                                <div class="row card-body fs-5">
+                                    <div class="col-md-2 fw-bold d-flex align-self-center">Overall</div>
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-8">
+                                        <div class="container-fluid p-0">
+                                            <div class="row">
+                                                <div class="col-md-2"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/neutral.svg')%>" alt="neutral_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/neutral.svg')%>" alt="neutral_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/very-sad.svg')%>" alt="very_sad_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/very-happy.svg')%>" alt="very_happy_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/neutral.svg')%>" alt="neutral_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5 class="text-center text-bold mt-5 fw-bold">EXTENDED TEAM</h5>
+                            <i class="bi bi-dash-lg fs-1 d-flex justify-content-center text-warning"></i>
+
+                            <div class="mt-3 container-fluid">
+                                <div class="row fs-6">
+                                    <div class="col-md-4"></div>
+                                    <div class="col-md-8">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-2"></div>
+                                                <div class="col-md-1 p-0 d-flex justify-content-center">9w ago</div>
+                                                <div class="col-md-1 p-0 d-flex justify-content-center">8w ago</div>
+                                                <div class="col-md-1 p-0 d-flex justify-content-center">7w ago</div>
+                                                <div class="col-md-1 p-0 d-flex justify-content-center">6w ago</div>
+                                                <div class="col-md-1 p-0 d-flex justify-content-center">5w ago</div>
+                                                <div class="col-md-1 p-0 d-flex justify-content-center">4w ago</div>
+                                                <div class="col-md-1 p-0 d-flex justify-content-center">3w ago</div>
+                                                <div class="col-md-1 p-0 d-flex justify-content-center">2w ago</div>
+                                                <div class="col-md-1 p-0 d-flex justify-content-center">1w ago</div>
+                                                <div class="col-md-1 p-0 d-flex justify-content-center">Current</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2 card shadow border-0 container-fluid">
+                                <div class="row card-body fs-5">
+                                    <div class="col-md-2 d-flex align-self-center">Alexandr Evseev</div>
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-8">
+                                        <div class="container-fluid p-0">
+                                            <div class="row">
+                                                <div class="col-md-2"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/very-happy.svg')%>" alt="very_happy_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/neutral.svg')%>" alt="neutral_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2 card shadow border-0 container-fluid">
+                                <div class="row card-body fs-5">
+                                    <div class="col-md-2 d-flex align-self-center">Nikolai Kapustin</div>
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-8">
+                                        <div class="container-fluid p-0">
+                                            <div class="row">
+                                                <div class="col-md-2"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2 card shadow border-0 container-fluid">
+                                <div class="row card-body fs-5">
+                                    <div class="col-md-2 d-flex align-self-center">Anna Kotova</div>
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-8">
+                                        <div class="container-fluid p-0">
+                                            <div class="row">
+                                                <div class="col-md-2"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/neutral.svg')%>" alt="neutral_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/neutral.svg')%>" alt="neutral_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/very-sad.svg')%>" alt="very_sad_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2 card shadow border-0 container-fluid">
+                                <div class="row card-body fs-5">
+                                    <div class="col-md-2 d-flex align-self-center">Nina Mammadova</div>
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-8">
+                                        <div class="container-fluid p-0">
+                                            <div class="row">
+                                                <div class="col-md-2"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2 card shadow border-0 container-fluid">
+                                <div class="row card-body fs-5">
+                                    <div class="col-md-2 d-flex align-self-center">Natalia Starkova</div>
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-8">
+                                        <div class="container-fluid p-0">
+                                            <div class="row">
+                                                <div class="col-md-2"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2 card shadow border-0 container-fluid">
+                                <div class="row card-body fs-5">
+                                    <div class="col-md-2 d-flex align-self-center">Anton Tarkhanov</div>
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-8">
+                                        <div class="container-fluid p-0">
+                                            <div class="row">
+                                                <div class="col-md-2"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2 card shadow border-0 container-fluid">
+                                <div class="row card-body fs-5">
+                                    <div class="col-md-2 d-flex align-self-center">Alexandr Vovchuk</div>
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-8">
+                                        <div class="container-fluid p-0">
+                                            <div class="row">
+                                                <div class="col-md-2"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                                <div class="col-md-1"><img class="smiley" src="<%=require('../img/empty-smiley.svg')%>" alt="empty_smiley"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </main>
+                </div>
+            </div>
+            <br><br><br>
     </body>
     
 </html>
