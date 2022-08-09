@@ -28,3 +28,46 @@
     bottom: 5px;
     border-radius: 15px;
 }
+
+.header{
+    height: 150px;
+    background-color: #343434;
+    
+}
+.headertext>h1{
+    font-size: 80px;
+    text-align: center;
+    padding-top: 90px; 
+    color: #fff;
+    font-family:francisco-serial;
+    font-weight: bold;
+}
+.headertext>h2{
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+.renameAnko>h2{
+    text-decoration: underline; 
+    text-decoration-color: red;
+}
+
+.profile-logo{
+    width: 125px;
+}
+.header-text{
+    color: #ffffff;
+    font-family: francisco-serial;
+    font-weight: 900;
+    font-size: 5em;
+}
+.mail-text{
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: 500;
+}
+main{
+    background: #f5f7f8;
+}
+
+
