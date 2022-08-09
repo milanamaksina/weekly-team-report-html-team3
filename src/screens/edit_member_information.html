@@ -3,11 +3,94 @@
     <head>
         <meta charset="utf-8" />
         <title>Edit member information</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     </head>
+       
     <body class="h-100">
-        <header>edit_member_information_TEST</header>
-        <main></main>
-        <footer></footer>
+        <%= require("html-loader!../components/button.html").default %>
+        <%= require("html-loader!../components/sidebar.html").default %>
+            <%= require("html-loader!../components/header.html").default %>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <main class="h-100 col-md-10 p-5">
+                        <div class="container">
+                            <div class="my-lg-4 mb-12">
+                                <h1>Edit Anatoliy's Information</h1>
+                                <h6>You may assign leaders or team members to this person, as well as deactivate their account if they no longer work for your organization.</h6>
+                            </div>
+                            <div>
+                                <h4>BASIC PROFILE INFORMATION</h4>
+                                <form class="border-top mb-5">
+                                    <div class="mb-3">
+                                        <h5>First name</h5>
+                                        <input style="width: 20%; height: 20%" placeholder="Anatoliy"/>
+                                    </div>
+                                    <div class="mb-3">
+                                        <h5>Last name</h5>
+                                        <input style="width: 20%; height: 20%" placeholder="Kolodkin"/>
+                                    </div>
+                                    <div class="mb-3">
+                                        <h5>Title</h5>
+                                        <input style="width: 20%; height: 20%" placeholder="CEO"/>
+                                    </div>
+                                    <input type="submit" value="Save" class="btn btn-warning" />
+                                </form>
+                                <div>
+                                    <h4>ANATOLIY REPORTS TO THE FOLLOWING LEADER:</h4>
+                                    <div class="mb-5 border-top pt-4">
+                                        <div class="d-grid gap-2 d-md-block mb-3">
+                                            <button class="btn btn-dark" type="button">Nikolay Kapustin</button>
+                                            <button class="btn btn-dark" type="button">Nina Mammadova</button>
+                                            <button class="btn btn-dark" type="button">Natalia Starkova</button>
+                                            <button class="btn btn-dark" type="button">Anton Tarkhanov</button>
+                                            <button class="btn btn-dark" type="button">Alexandr Vovchuk</button>
+                                        </div>
+                                        <%= require("html-loader!../components/modal.html").default %>
+
+                                    </div>
+                                </div>
+                        
+                                <div>
+                                    <h4>THE FOLLOWING TEAM MEMBERS REPORT TO</h4>
+                                    <div class="mb-5 border-top pt-4">
+                                        <div class="d-grid gap-2 d-md-block mb-3 col-md-8">
+                                            <button class="btn btn-dark" type="button">Aleksandr Evseev</button>
+                                            <button class="btn btn-dark" type="button">Nikolay Kapustin</button>
+                                            <button class="btn btn-dark" type="button">Anna Kotova</button>
+                                            <button class="btn btn-dark" type="button">Nina Mammadova</button>
+                                            <button class="btn btn-dark" type="button">Natalia Starkova</button>
+                                            <div class="my-lg-4">
+                                                <button class="btn btn-dark" type="button">Anton Tarkhanov</button>
+                                                <button class="btn btn-dark" type="button">Alexandr Vovchuk</button>
+                                            </div>
+                                            <button type="button" class="btn btn-outline-secondary">Edit Member(s)</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div>
+                                <div class="text-center">
+                                    <textarea rows="2" cols="50" disabled>https://weeklyreport.entreleadership</textarea>
+                                </div>
+                                <div class="text-center">
+                                    <br />
+                                    <button type="button" class="btn btn-warning ml-3 align-items-center">Copy link</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>    
     </body>
-    
 </html>
