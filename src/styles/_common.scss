@@ -2,6 +2,7 @@
     background: #333a3d;
 }
 .floating-button{
+    background-color: #0a3d67;
     position: fixed !important;    
     right: 0px !important;
     transform: rotate(-90deg);
@@ -10,6 +11,20 @@
     -webkit-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
     transform-origin: bottom right;
-    bottom: 57% !important;
+    bottom: 60% !important;
+    z-index: 6;
+    border-radius: 3px;
+}
+.nav-link:hover{
+    background: #1f2426;
+    font-weight: bold;
+}
+
+.help{
+    color: rgb(21, 21, 21);
     z-index: 7;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 15px;
 }
