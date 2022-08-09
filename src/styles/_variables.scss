@@ -2,6 +2,22 @@
 @import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/mixins';
 
+//navs
+$nav-pills-link-active-bg: #1f2426;
+$nav-link-color: white;
+$nav-link-hover-color: white;
+$nav-pills-link-active-font-weight: bold;
+
+//body
+$body-bg: #f5f7f8;
+
+//modal
+$modal-footer-border-width: 0px;
+$modal-header-border-width: 0px;
+$modal-border-radius: 0px;
+$modal-xl:1100px;
+$modal-content-border-width: 0px;
+
 //colors
 $gray-900: #1f2426;
 $gray-400: #BDBDBD;
@@ -18,25 +34,6 @@ $theme-colors: (
     gray-light: $gray-400,
     gray-dark: $gray-700,
 );
-
-//navs
-$nav-link-color: $white;
-$nav-link-hover-color: $warning;
-$nav-pills-link-active-color: $white;
-$nav-pills-link-active-bg: $gray-900;
-$nav-pills-link-active-font-weight: bold;
-$nav-pills-padding-y: 10px;
-$nav-pills-padding-x: 30px;
-
-//body
-$body-bg: #f5f7f8;
-
-//modal
-$modal-footer-border-width: 0px;
-$modal-header-border-width: 0px;
-$modal-border-radius: 0px;
-$modal-xl:1100px;
-$modal-content-border-width: 0px;
 
 //input
 $input-focus-box-shadow: 0px 0px 4px $warning;
